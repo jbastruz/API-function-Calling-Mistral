@@ -32,7 +32,7 @@ uvicorn FastAPI:app --reload
 ```
 This command starts the server and enables automatic reloading of the server whenever changes are made to the code.
 
-Once the server is running, you can access the API documentation by navigating to <http://localhost:8000> in your web browser.
+Once the server is running, you can access the API documentation by navigating to <http://localhost:8000/docs> in your web browser.
 
 ## Project Overview
 
