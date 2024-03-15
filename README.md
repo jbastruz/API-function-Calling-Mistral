@@ -16,7 +16,7 @@ You can install these packages using pip:
 ```
 pip install pandas requests functools json mistralai
 ```
-## Mistral API Key
+## <img src="https://media.theresanaiforthat.com/icons/mistral-ai.svg?height=207" width="20" height="20"> Mistral API Key
 
 This project uses the Mistral.ai Large model. To use the model, you need to provide an API key, which you can obtain from the Mistral AI console at `https://console.mistral.ai`. Once you have the API key, you can add it to your code as follows:
 ```python
