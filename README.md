@@ -37,6 +37,6 @@ Once the server is running, you can access the API documentation by navigating t
 
 ## Project Overview
 
-The remainder of the project can be found in the "Mistral Function Calling.ipynb" Jupyter notebook. This notebook provides an example of how to use Mistral AI to call Python functions based on textual conversations. It includes step-by-step instructions and code examples.
+The remainder of the project can be found in the `Mistral Function Calling.ipynb` Jupyter notebook. This notebook provides an example of how to use Mistral AI to call Python functions based on textual conversations. It includes step-by-step instructions and code examples.
 
 That's it! You have successfully set up and run the project.
