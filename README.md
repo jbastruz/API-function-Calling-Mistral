@@ -1,41 +1,69 @@
-# Project Setup
+# API-function-Calling-Mistral
 
-To set up and run this project, follow these steps:
+**API en FastAPI et notebook de démonstration pour appeler dynamiquement des fonctions Python via Mistral AI.**
 
-## Prerequisites
+## 🚀 Description
 
-Before running the project, make sure you have the following packages installed:
+Ce projet propose une API et un notebook de démonstration pour la *Function Calling* avec Mistral, permettant :
 
-* pandas
-* requests
-* functools
-* json
-* mistralai
+- d'intégrer Mistral.ai (modèle LLM) à l'exécution de fonctions Python
+- de dialoguer en langage naturel pour déclencher des appels de fonctions
+- d'exposer et tester ces fonctionnalités via une API FastAPI et via Jupyter
 
-You can install these packages using pip:
+## 🛠️ Fonctionnalités
+
+- Serveur FastAPI pour exposer des endpoints fonctionnels
+- Notebook explicatif pour l'utilisation de Mistral avec la function calling
+- Exemples d'appels de fonctions variées : parsing, interaction avec des fichiers, etc.
+- Documentation interactive via Swagger UI (`/docs`)
+
+## 📦 Structure du projet
+
+- `FastAPI.py` : Serveur API principal
+- `Mistral function Calling.ipynb` : Démonstration intégrée en notebook
+- `items.csv` : Exemple de données pour manipulations fonctionnelles
+- `.gitignore` : Config git standard
+- `README.md` : Ce fichier de présentation
+
+## 🧰 Packages requis
+
+- `pandas`
+- `requests`
+- `functools`
+- `json`
+- `mistralai`
+- `fastapi` et `uvicorn` (pour lancer le serveur API)
+
+Installez les dépendances avec :
+```bash
+pip install pandas requests functools json mistralai fastapi uvicorn
 ```
-pip install pandas requests functools json mistralai
-```
-## <img src="https://media.theresanaiforthat.com/icons/mistral-ai.svg?height=207" width="20" height="20"> Mistral API Key
 
-This project uses the Mistral.ai Large model. To use the model, you need to provide an API key, which you can obtain from the Mistral AI console at `https://console.mistral.ai`. Once you have the API key, you can add it to your code as follows:
+## 🔑 Clé API Mistral
+
+Le projet nécessite la clé API Mistral, disponible sur https://console.mistral.ai.  
+Définissez votre clé dans le code :
+
 ```python
-api_key = "YOUR_API_KEY"
+api_key = "VOTRE_MISTRAL_API_KEY"
 ```
-Replace `YOUR_API_KEY` with your actual API key.
 
-## Running the Server
+## 💡 Utilisation
 
-To start the FastAPI server, run the following command in your terminal:
-```css
-uvicorn FastAPI:app --reload
-```
-This command starts the server and enables automatic reloading of the server whenever changes are made to the code.
+1. Lancez l'API avec :
+    ```bash
+    uvicorn FastAPI:app --reload
+    ```
+   Swagger UI sera accessible à http://localhost:8000/docs
 
-Once the server is running, you can access the API documentation by navigating to <http://localhost:8000/docs> in your web browser.
+2. Ouvrez `Mistral function Calling.ipynb` pour parcourir et tester la fonction calling en interactif.
 
-## Project Overview
+## 📄 Exemples
 
-The remainder of the project can be found in the `Mistral Function Calling.ipynb` Jupyter notebook. This notebook provides an example of how to use Mistral AI to call Python functions based on textual conversations. It includes step-by-step instructions and code examples.
+Le notebook montre comment construire une requête pour demander à Mistral d'exécuter une fonction Python selon l'intention détectée dans le texte.
 
-That's it! You have successfully set up and run the project.
+## 🏗️ Contributions
+
+Suggestions, corrections, ou extensions — toute contribution est la bienvenue !
+
+---
